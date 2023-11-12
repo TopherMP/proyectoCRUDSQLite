@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Ingresar">
+    <LinearLayout
+        android:id="@+id/layoutMenu"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#CCD51A"
+        android:orientation="horizontal">
+
+        <ImageButton
+            android:id="@+id/btnBack"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginBottom="15dp"
+            android:background="#00000000"
+            android:contentDescription="@string/volver"
+            android:onClick="Back"
+            app:srcCompat="@drawable/back">
+
+        </ImageButton>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="21dp"
+            android:layout_marginRight="20dp"
+            android:text="Volver"
+            android:textColor="@color/black"
+            android:textSize="22sp" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center|top"
+            android:layout_marginTop="21dp"
+            android:text="Iniciar sesión"
+            android:textColor="@color/black"
+            android:textSize="24sp" />
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/layoutForm"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#F7FFA8"
+        android:orientation="vertical"
+        android:gravity="center_horizontal">
+
+        <EditText
+            android:id="@+id/etUser"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="100dp"
+            android:hint="Ingrese su usuario"
+            android:inputType="text"
+            android:minHeight="48dp"/>
+
+        <EditText
+            android:id="@+id/etPass"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:ems="10"
+            android:hint="Ingrese su contraseña"
+            android:inputType="textPassword"
+            android:minHeight="48dp" />
+
+        <Button
+            android:id="@+id/btnIngresar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Iniciar sesión"
+            android:onClick="ingresar"
+            tools:layout_editor_absoluteX="139dp"
+            tools:layout_editor_absoluteY="422dp"
+            android:layout_marginTop="60dp"/>
+
+        <ProgressBar
+            android:id="@+id/progressBar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:visibility="gone"
+            style="@style/Widget.AppCompat.ProgressBar.Horizontal">
+
+        </ProgressBar>
+    </LinearLayout>
+
+
+
+
+</LinearLayout>
